@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Login - Bem Vindo</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #A68BF9;
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tela {
+                width: 70%;
+                height: 550px;
+                display: flex;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            .bemvindo {
+                background-color: #633ec7;
+                width: 55%;
+                color: white;
+                padding: 220px 60px;
+                box-sizing: border-box;
+            }
+            .bemvindo h1 {
+                font-size: 42px;
+                margin: 0 0 20px 0;
+            }
+            .bemvindo p {
+                font-size: 18px;
+                line-height: 1.5;
+                margin: 0;
+            }
+            .login {
+                background-color: white;
+                width: 45%;
+                padding: 100px 50px;
+            }
+            .login h2 {
+                font-size: 32px;
+                margin: 0 0 30px 0;
+            }
+            .input {
+                position: relative;
+                margin-bottom: 20px;
+            }
+            .input input {
+                width: 100%;
+                padding: 14px 14px 14px 45px;
+                border: 1px solid #ddd;
+                border-radius: 25px;
+                font-size: 15px;
+            }
+            .input input::placeholder {
+                color: gray;
+            }
+            .icon {
+                position: absolute;
+                left: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 18px;
+                fill: gray;
+            }
+            .resto {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 13px;
+                margin-bottom: 30px;
+                color: gray;
+            }
+            .resto label {
+                display: flex;
+                align-items: center;
+            }
+            .resto input {
+                margin-right: 6px;
+            }
+            .resto a {
+                color: gray;
+                text-decoration: none;
+            }
+            .resto a:hover {
+                text-decoration: underline;
+            }
+            .btn-submit {
+                width: 100%;
+                background-color: #633EC7;
+                color: white;
+                border: none;
+                padding: 14px;
+                border-radius: 25px;
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            .btn-submit:hover {
+                background-color: #4f30a3;
+            }
+            .criar-conta {
+                text-align: center;
+                font-size: 13px;
+                color: gray;
+            }
+            .criar-conta a {
+                color: #633EC7;
+                text-decoration: none;
+            }
+            .criar-conta a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tela">
+            <div class="bemvindo">
+                <h1>Bem-Vindo!</h1>
+                <p>Você pode fazer login com uma conta já existente.</p>
+            </div>
+            
+            <div class="login">
+                <h2>Conecte-se</h2>
+                
+                <form>
+                    <div class="input">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                        </svg>
+                        <input type="text" placeholder="Username ou email" required>
+                    </div>
+                    
+                    <div class="input">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M12,17A2,2 0 0,0 14,15A2,2 0 0,0 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10A2,2 0 0,1 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"/>
+                        </svg>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    
+                    <div class="resto">
+                        <label>
+                            <input type="checkbox"> Lembre-se de mim
+                        </label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn-submit">Entrar</button>
+                    <div class="criar-conta">
+                        Novo aqui? <a href="#">Crie uma Conta</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
